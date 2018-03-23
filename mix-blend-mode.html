@@ -1,0 +1,53 @@
+<!--
+
+CSS dinamically changes text color depends on the background
+
+-->
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+html {
+  background: #fff;
+}
+
+html, body {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background:#fff;
+  height:3500px;
+}
+
+.fixed {
+  mix-blend-mode: difference;
+  color: #fff;
+  position: fixed;
+  top:0px;
+  left:0;
+}
+.photo {
+  height:1500px;
+  width:100%;
+  background:url(http://saison.studio/thumbs/home/saison_d_03-1440x1800.jpg);
+  background-size:cover;
+  background-repeat:no-repeat;
+}
+
+blockquote {
+  margin-bottom: 100px;
+  line-height: 1.1;
+  font-size:40px;
+}
+
+</style>
+</head>
+<body>
+
+  <blockquote class="fixed">“Attack design doldrums with stylistic souplesse”</blockquote>
+  <div class="photo"></div>
+
+</body>
+</html>
